@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieBox</string>
+    <string name="poster_path">https://image.tmdb.org/t/p/w500</string>
+    <string name="trailer_path">https://www.youtube.com/watch?v=</string>
+    <string name="pref_default_value">popular</string>
+    <string name="pref_title_value">Select criteria</string>
+    <string name="main_manu_title_Settings">Settings</string>
+    <string name="main_menu_favourites">Favourites</string>
+    <string name="main_menu_favourites_showAsAction">always</string>
+</resources>

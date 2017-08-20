@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_screen_padding">4dp</dimen>
+    <dimen name="home_screen_RecyclerView_padding">2dp</dimen>
+    <dimen name="home_screen_movie_card_cornerRadius">10dp</dimen>
+    <dimen name="home_screen_movie_card_elevation">10dp</dimen>
+    <dimen name="home_screen_ItemOffsetDecoration">2dp</dimen>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeScreenBackground"
+    tools:context="com.trehan.utkarsh.moviebox.MovieActivity"
+    >
+
+    <FrameLayout
+        android:id="@+id/noFavouriteFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/noFavouriteScreenBackground"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/noFavouriteImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/johnny_bravo_no_favourite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="monospace"
+            android:text="No Favourites Yet!"
+            android:textColor="#fff"
+            android:textSize="18sp">
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/homeScreenIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallPulseSyncIndicator"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/home_screen_RecyclerView_padding">
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
